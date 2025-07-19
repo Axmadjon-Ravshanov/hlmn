@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Yangiliklar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="TalabaWay-logo.png" type="image/png" />
+  <style>
+
+
+
+
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:  'Inter', sans-serif;
+    }
+
+
+
+
+    body {
+      margin: 0;
+      font-family:  'Inter', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+
+/* Navbar Styles */
+ nav {
+      background-color: #0A1632;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 80px;
+        height: 70px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+
+
+      /* Navbar Container */
+      nav {
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: center;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .container button {
+      margin-top: 20px; 
+      padding: 10px 15px; 
+      background-color: white; 
+      color: #00063F; 
+      border: none; 
+      border-radius: 5px;
+    }
+
+    .universe-cards {
+      text-decoration: none;
+    }
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+     .signin-button {
+  background-color: white;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.signin-button:hover {
+  background-color: #f0f9ff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+ .hero {
+      position: relative;
+      height: 35px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 100px 60px 160px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.hero-content h1 .highlight {
+  color: #fff;
+  background-color: #1e3a8a;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.hero-content h1 {
+  color: white;
+}
+
+.hero-content h1 {
+      position: relative;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for the cards */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    font-family:  'Inter', sans-serif;
+}
+
+/* Individual card */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family:  'Inter', sans-serif;
+}
+
+/* Image inside the card */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Title inside the card */
+.card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0.2rem;
+    color: #00063F;
+}
+
+/* Text inside the card */
+.card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Link inside the card */
+.card a {
+    color: #00063F;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .site-footer {
+  background: linear-gradient(90deg, #0A1632, #1e3a8a);
+  color: white;
+  font-family:  'Inter', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-top: 8px solid #00063F;
+  border-bottom: 8px solid #00063F;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: white;
+  color: #001834;
+  font-weight: 500;
+  padding: 0.2px 0;
+}
+
+
+.site-footer {
+  position: relative;
+  text-align: left;
+  justify-content: left;
+  margin-top: 16px;
+}
+
+
+
+
+.logo-link {
+      text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-news-section {
+  padding: 65px;
+}
+
+     .news-container {
+      display: flex;
+      max-width: 1100px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .news-image {
+      width: 45%;
+    }
+
+    .news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .news-content {
+      padding: 30px;
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .news-date {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .news-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .news-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #111;
+    }
+
+    .hashtags {
+      margin-top: 20px;
+    }
+
+    .hashtags a {
+      color: #6b79ff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    .hashtags a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+
+ <!-- Navbar -->
+  <nav>
+    <a href="example.html" class="logo-link">
+    <div class="logo">
+      <img class="gargantyua-logo" src="images/TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
+    </div>
+  </a>
+    
+   
+    
+        <div class="nav-links" id="navLinks">
+          <a href="example.html">Bosh sahifa</a>
+          <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+          <a href="reytinglar.html">Reytinglar</a>
+          <a href="yangiliklar.html">Yangiliklar</a>
+          <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+        </div>
+
+        <div class="signin">
+          <a href="login.html" class="signin-button">Kirish</a>
+        </div>
+
+  </nav>
+
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+       <h1>Yangiliklar<span class="highlight">sahifasi</span></h1>
+      </div>
+    </div>
+      
+
+
+  </section>
+
+
+<section class="main-news-section">
+
+ <h2 style="margin-bottom: 20px; font-size: 30px;">Eng so‘ngi yangiliklar</h2>
+
+  <div class="news-container">
+    <div class="news-image">
+      <img src="images/news_img_1.jpeg" alt="Student image">
+    </div>
+    <div class="news-content">
+      <div class="news-date">26.06.2025</div>
+      <div class="news-title">Qaysi OTMlarda KECHKI TA’LIM mavjud?</div>
+      <p>📚 Kechki ta’limni xohlovchilar DIQQATIGA!</p>
+      <p>🏢 Qaysi OTMlarda KECHKI TA’LIM mavjud?</p>
+      <p>Endi kunduzgi ish, oilaviy mas’uliyatlar yoki boshqa sabablarga ko‘ra kechasi o‘qishni rejalashtirayotganlar uchun qulay imkoniyat!</p>
+      <p class="highlight">👇 Quyidagi OTMlarning KECHKI TA’LIM dasturlariga Mentalaba.uz orqali hujjat topshirishingiz mumkin:</p>
+      <p>1. MU – Millat Umidi University</p>
+
+      <div class="hashtags">
+        <a href="#">#Universitet</a>
+        <a href="#">#Abituriyent</a>
+        <a href="#">#Qabul 2025</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+
+
+<div class="cards-container">
+    <div class="card">
+        <img src="images/news_img_1.jpeg" alt="Image 1">
+        <h3>O‘zbekistonda iqtidorli o‘quvchilar uchun dastur boshlanishi munosabati bilan “Garvard maktabi” ochiladi.</h3>
+        <p>Mazkur muassasa xalqaro maktab sifatida Al-Beruniy nomi bilan tashkil etiladi va birinchi yili maxsus dastur asosida 60 nafar 8-sinf o‘quvchisini qabul qiladi...</p>
+        <a href="#">Batafsil »</a>
+    </div>
+    <div class="card">
+        <img src="images/news_img_2.jpeg" alt="Image 2">
+        <h3>O‘zbekiston 2025-yilda ta’lim islohotlari va maktablar sonini ko‘paytirishga e’tibor qaratadi</h3>
+        <p>O‘zbekiston Prezidenti yaqinda 2025-yil uchun asosiy ta’lim islohotlarini bayon etdi. Ular maktabgacha va maktab tizimlarini kengaytirish, o‘qituvchilar sifati va tayyorgarligini oshirishga qaratilgan...</p>
+        <a href="#">Batafsil »</a>
+    </div>
+    <div class="card">
+        <img src="images/news_img_3.jpeg" alt="Image 3">
+        <h3>Xitoyning Xidian universiteti 2025-yilda o‘zbekistonlik yoshlar uchun raqamli ta’lim dasturini ishga tushiradi</h3>
+        <p>Xidian universiteti 2025-yilda O‘zbekiston yoshlariga mo‘ljallangan raqamlashtirishga yo‘naltirilgan ta’lim dasturini ishga tushirish rejasini e’lon qildi. Dastur Markaz bilan hamkorlikda amalga oshiriladi...</p>
+        <a href="#">Batafsil »</a>
+    </div>
+    <div class="card">
+        <img src="images/news_img_4.jpeg" alt="Image 2">
+        <h3>O‘zbekiston IsDB va BMTTD bilan hamkorlikda qishloqni kompleks rivojlantirish loyihasining ikkinchi bosqichini boshladi</h3>
+        <p>293,5 million dollar byudjetga ega ushbu loyiha Samarqand, Qashqadaryo va Surxondaryo viloyatlaridagi 21 ta tuman bo‘yicha 157 ta mahallani qamrab oladi.</p>
+        <a href="#">Batafsil »</a>
+    </div>
+    <div class="card">
+        <img src="images/news_img_5.jpeg" alt="Image 1">
+        <h3>Rossiya Toshkentdagi maktabda til bilan bog‘liq zo‘ravonlik hodisasi yuzasidan O‘zbekistondan izoh talab qildi</h3>
+        <p>Rossiya Tashqi ishlar vazirligining rasmiy vakili Mariya Zaxarova voqea aks etgan videoga nisbatan “chuqur xavotir” bildirar ekan, bunday holatlarga o‘rin yo‘qligini ta’kidladi...</p>
+        <a href="#">Batafsil »</a>
+    </div>
+    <div class="card">
+        <img src="images/news_img_6.jpeg" alt="Image 3">
+        <h3>O‘zbekistonning eng katta Chevening stipendiatlari guruhi Buyuk Britaniyada o‘qishga tayyorgarlik ko‘rmoqda</h3>
+        <p>Kelajakdagi yetakchilarni yetishtirishga qaratilgan Chevening stipendiyalari dasturi joriy yilda kengaytirilib, 15 nafar stipendiatni qo‘llab-quvvatlashni nazarda tutmoqda...</p>
+        <a href="#">Batafsil »</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <img src="images/TalabaWay-logo.png" alt="Logo" class="footer-logo" />
+      <h3>TalabaWay</h3>
+      <p>
+        To‘g‘ri taʼlim yo‘lini tanlashingizda yordam beramiz.
+      </p>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-column">
+      <h4>Navigatsiya</h4>
+      <ul>
+        <li><a href="example.html">Bosh sahifa</a></li>
+        <li><a href="reytinglar.html">Reytinglar</a></li>
+        <li><a href="o`quv-markazlari.html">O‘quv markazlari</a></li>
+        <li><a href="yangiliklar.html">Yangiliklar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-column">
+      <h4>Qoʻshimcha maʼlumotlar</h4>
+      <ul>
+        <li>Email: info@talabaway.com</li>
+        <li>Telefon: +998 (99) 123-12-14</li>
+        <li>Telegram: @talabaway</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gargantyua. Barcha huquqlar himoyalangan</p>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

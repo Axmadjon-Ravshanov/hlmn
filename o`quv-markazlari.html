@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>O`quv markazlari</title>
+  <link rel="icon" href="TalabaWay-logo.png" type="image/png" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family:  'Inter', sans-serif;
+      background-color: #F6F7F9;
+    }
+
+
+/* Navbar Styles */
+ nav {
+      background-color: #0A1632;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 80px;
+        height: 70px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+
+
+      /* Navbar Container */
+      nav {
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: center;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .container button {
+      margin-top: 20px; 
+      padding: 10px 15px; 
+      background-color: white; 
+      color: #00063F; 
+      border: none; 
+      border-radius: 5px;
+    }
+
+    .universe-cards {
+      text-decoration: none;
+    }
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+     .signin-button {
+  background-color: white;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.signin-button:hover {
+  background-color: #f0f9ff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Hero Section */
+    .hero {
+      position: relative;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 100px 60px 160px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.text-area h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  animation: fadeInLeft 1s ease;
+}
+
+.text-area .highlight {
+  color: #fff;
+  background-color: #1e3a8a;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.image-area img {
+  width: 320px;
+  height: 300px;
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.search-panel {
+  position: absolute;
+  bottom: 35px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 60%;
+  animation: fadeInUp 1.2s ease;
+}
+
+.search-panel select {
+  appearance: none;
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 200px;
+  background-color: #fefefe;
+  transition: box-shadow 0.3s;
+}
+
+.search-panel select:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn {
+  background: #0A1632;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #00063F;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-area img {
+    margin-top: 30px;
+    width: 240px;
+  }
+
+  .search-panel {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .search-panel select {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .site-footer {
+  background: linear-gradient(90deg, #0A1632, #1e3a8a);
+  color: white;
+  font-family:  'Inter', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-top: 8px solid #00063F;
+  border-bottom: 8px solid #00063F;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: white;
+  color: #001834;
+  font-weight: 500;
+  padding: 0.2px 0;
+}
+
+
+.site-footer {
+  position: relative;
+  text-align: left;
+  justify-content: left;
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    .logo-link {
+      text-decoration: none;
+    }
+    .oquv-markazi-btn {
+      text-decoration: none;
+    }
+
+
+
+
+
+ .heading {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .blue {
+      color:  #3c64d3;
+    }
+
+    .black {
+      color: #000000;
+    }
+
+    .description {
+      margin-top: 10px;
+      color: #666;
+      font-size: 16px;
+    }
+
+
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tr-section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: consolas;
+  margin-top: 35px;
+  font-family:  'Inter', sans-serif;
+}
+
+.container{
+/*   width: 1000px; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.container .card{
+  position: relative;
+  margin: 0 40px;
+}
+.container .card .face{
+  width: 300px; 
+  height: 260px;
+  transition: 0.5s;
+}
+.container .card .face.face1{
+  position: relative;
+  background: linear-gradient(90deg, #0A1632, #1e3a8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container .card:hover .face.face1{
+/*   background: #ff0057; */
+    background-image: linear-gradient(to right top, #d6966d, #da9869, #dd9b64, #df9e60, #e1a15b, #e5a759, #e8ad58, #ebb356, #f0be57, #f5c959, #f8d45c, #fbe05f);
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+  transition: 0.5s;
+}
+ .container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+ .container .card .face.face1 .content img{
+  border-radius: 10px;
+  max-width: 120px;
+}
+.container .card .face.face1 .content h3{
+  margin: 10px 0 0; 
+  padding: 0;
+  color: #fff;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8); 
+  transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+  margin: 0 0 15px;
+  padding:0;
+}
+.container .card .face.face2 .content a{
+  margin: auto 65px -5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+ background-color: #4da6ff;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.card .face.face2 .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container .card .face.face2 .content a:hover{
+  box-shadow:
+        0 0 5px #4da6ff,
+        0 0 10px #4da6ff,
+        0 0 20px #4da6ff;
+      transform: scale(1.05);
+}
+
+.content p {
+  font-size: 14px;
+  font-family:  'Inter', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comments {
+  font-family:  'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.carousel-container {
+      width: 90%;
+      max-width: 1200px;
+      position: relative;
+      overflow: hidden;
+      padding: 40px 0;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card-c {
+      background: linear-gradient(90deg, #4da6ff, #1e3a8a);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 380px;
+    }
+
+    .quote {
+      font-size: 28px;
+      color: white;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .author {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+
+    .author-info {
+      font-size: 15px;
+      color: white;
+    }
+
+    .author-info strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .controls button {
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .controls button:hover {
+      background-color: #4da6ff;
+    }
+
+    @media (min-width: 768px) {
+      .card-c {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card-c {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .faq-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  border: 2px solid #ddd;
+  font-family:  'Inter', sans-serif;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1.5px solid #1e3a8a;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1.5px solid #1e3a8a;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #001834;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #1e3a8a;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #001834;
+  border: 1px solid #001834;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #4D4D4D;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.faq-container {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #001834;
+}
+
+.accordion-item {
+    position: relative;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-header .title-yangiliklar {
+  font-size: 32px;
+  font-weight: 650;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.section-header .underline {
+  width: 70px;
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #3c64d3);
+  margin: 0 auto 16px;
+}
+
+.section-header .subtitle-yangiliklar {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+.reaserches-and-blogs {
+  padding: 1px 10px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background: #f8f9fc;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.shape-box {
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  width: 100%;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.shape-box_half {
+  overflow: hidden;
+  text-align: left;
+}
+
+.shape-box_half:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewY(53.5deg);
+  transform-origin: top left;
+  transition: transform 0.4s;
+  background: #fff;
+  z-index: 1;
+}
+
+.shape-box>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.shape-box_half figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px 20px;
+  transform: translateY(100%);
+  z-index: 3;
+  transition: transform 0.4s;
+}
+
+.shape-box_half figcaption .show-cont {
+  position: absolute;
+  bottom: calc(100% + 20px);
+  left: 20px;
+  right: 20px;
+  transition: bottom 0.4s;
+}
+
+.card-no {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 8px;
+}
+
+.card-main-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #292b2c;
+}
+
+.card-content {
+  color: #5f5f5f;
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  padding: 6px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 16px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.shape-box_half>.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1e3a8a;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+/* Hover Effects */
+.shape-box_half:hover:before {
+  transform: skewY(20deg);
+}
+
+.shape-box_half:hover figcaption {
+  transform: translateY(0);
+}
+
+.shape-box_half:hover figcaption .show-cont {
+  bottom: 100%;
+}
+
+.shape-box_half:hover>.after {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+.training-centre-section-add {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.container-tr-add {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card4 h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card4 p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+
+  &.small {
+    font-size: 14px;
+  }
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card4 {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 262px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  
+  .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background: linear-gradient(90deg, #1e3a8a, #346be0);
+	transition: all 0.3s ease-out;
+  }
+  
+  .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid #346be0;
+  }
+  
+  h3 {margin-top: 8px;}
+}
+
+.card4:hover {
+  .go-corner {
+    margin-right: -12px;
+  }
+  .go-arrow {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+
+
+
+   <!-- Navbar -->
+  <nav>
+    <a href="example.html" class="logo-link">
+    <div class="logo">
+      <img class="gargantyua-logo" src="images/TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
+    </div>
+  </a>
+    
+   
+    
+        <div class="nav-links" id="navLinks">
+          <a href="example.html">Bosh sahifa</a>
+          <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+          <a href="reytinglar.html">Reytinglar</a>
+          <a href="yangiliklar.html">Yangiliklar</a>
+          <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+        </div>
+
+        <div class="signin">
+          <a href="login.html" class="signin-button">Kirish</a>
+        </div>
+
+  </nav>
+
+
+  </nav>
+
+ <section class="hero">
+  <div class="hero-content">
+    <div class="text-area">
+      <h1>Orzuingizdagi O`quv Markazini<br><span class="highlight">tanlang</span></h1>
+    </div>
+    <div class="image-area">
+      <img src="images/trainig-centre-chapter-boy.png" alt="Student" />
+    </div>
+  </div>
+
+  <div class="search-panel">
+    <select>
+      <option selected disabled>O`quv kursi</option>
+      <option>IELTS kursi</option>
+      <option>Ingiliz tili kursi</option>
+      <option>SAT kursi</option>
+    </select>
+    <select>
+      <option selected disabled>Joylashuv</option>
+      <option>Toshkent</option>
+      <option>Samarqand</option>
+      <option>Buxoro</option>
+      <option>Xorazm</option>
+    </select>
+    <select>
+      <option selected disabled>O`qish turi</option>
+      <option>Online</option>
+      <option>Offline</option>
+    </select>
+    <button class="search-btn">
+       <span>Qidiruv</span>
+    </button>
+  </div>
+</section>
+
+
+
+
+ <div class="heading">
+    <span class="blue">Eng mashxur</span>
+    <span class="black">O`quv markazlar</span>
+     <p class="description">Veb-saytimizda talabalar tomonidan qidirilgan eng mashhur O`quv Markazlar</p>
+  </div>
+
+<section class="tr-section">
+ <div class="container">
+    <div class="card">
+      <div class="face face1">
+      <div class="content">
+        <img src="images/internation-logo.png" alt="Design" class="card__icon">
+        <h3></h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>INTER NATION SCHOOL ingliz tili o‘quv markazi 2013-yil 22-iyulda tashkil etilgan bo‘lib, ayni paytda Toshkent shahrining eng qulay manzillarida o‘quv markazining 12 ta yirik filiali faoliyat ko‘rsatmoqda va ilg‘or texnologiyalar bilan jihozlangan...</p>
+        <a href="#" class="more-link">Batafsil</a>
+      </div>
+    </div>
+    </div>
+    
+    <div class="card">
+      <div class="face face1">
+      <div class="content">
+        <img src="images/marstiff-academy.jpg" alt="Code">
+        <h3></h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Marstiff akademiyasi oddiy vazifa bilan tashkil etilgan: Toshkentda yuqori sifatli SAT tayyorgarligini ta'minlash va talabalarga akademik orzularini ro'yobga chiqarishga yordam berish...</p>
+        <a href="#" class="more-link">Batafsil</a>
+      </div>
+    </div>
+    </div>
+    
+      <div class="card">
+      <div class="face face1">
+      <div class="content">
+        <img src="images/master-ielts.jpg" alt="Launch">
+        <h3></h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Master IELTS — ingliz tilini o’rgatish bo’yicha 9 yildan ortiq tajribaga ega va maxsus Mutalipov Sherzod tomonidan ishlab chiqilgan o’ziga xos metodikaga asoslanadi. Master IELTS boshqa ta’lim markazlari singari ishlamaydi...</p>
+        <a href="#" class="more-link">Batafsil</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="heading">
+    <span class="blue">Talabalarning</span>
+    <span class="black">fikrlari</span>
+    <p class="description">Sizga oʻxshagan talabalarga oʻqish joyini topishlari uchun qanday yordam berganimizni eshiting</p>
+  </div>
+
+
+
+  <section class="comments">
+    <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <div class="card-c">
+        <div class="quote">
+          “TalabaWay juda qulay platforma. Barcha o‘quv markazlarini bitta joyda ko‘rib, narxlarni solishtirish mumkin. Endi qayerda o‘qish kerakligi haqida ko‘p bosh qotirmayman.”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Illustrious">
+          <div class="author-info">
+            <strong>Umidaxon A.</strong>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-c">
+        <div class="quote">
+          “Avvallari yaxshi kurs topish uchun telegram guruhlaridan izlar edim. Endi TalabaWay orqali reytinglarga qarab tanlayapman. Haqiqatda foydali loyiha!”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Pranay">
+          <div class="author-info">
+            <strong>Azizbek M.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-c">
+        <div class="quote">
+          “TalabaWay menga IELTS kursini topishda yordam berdi. O‘quvchilar sharhlari va o‘qituvchilar haqida ma'lumot borligi eng yoqqan jihati.”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Pranay">
+          <div class="author-info">
+            <strong>Gulnoza R.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-c">
+        <div class="quote">
+          “Platformani ishlatish oson, dizayni zamonaviy. O‘quv markazlari haqida mustaqil fikrlar bo‘lishi halollikni ko‘rsatadi. Yoshlar uchun kerakli narsa!”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Pranay">
+          <div class="author-info">
+            <strong>Sherzod T.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-c">
+        <div class="quote">
+          “TalabaWay orqali bolamga matematika markazi tanladik. Narxlar, joylashuv, vaqt — barchasi ochiq ko‘rsatilgan. Rahmat!”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Pranay">
+          <div class="author-info">
+            <strong>Dilrabo X.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-c">
+        <div class="quote">
+          “ O‘zbekistonda bunaqa raqamli platformalarning ko‘payishi quvonarli. TalabaWay - ta’lim sohasida katta bir o‘zgarish boshlanishi.”
+        </div>
+        <div class="author">
+          <img src="images/profile-image.png" alt="Alex">
+          <div class="author-info">
+            <strong>Otabek Y.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+      <button onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const cards = carousel.querySelectorAll('.card-c');
+      const cardWidth = cards[0].offsetWidth + 20;
+      carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    }
+
+    function nextSlide() {
+      const cards = carousel.querySelectorAll('.card-c');
+      const maxIndex = cards.length - Math.floor(carousel.parentElement.offsetWidth / cards[0].offsetWidth);
+      if (currentIndex < maxIndex) {
+        currentIndex++;
+        updateCarousel();
+      }
+    }
+
+    window.addEventListener('resize', updateCarousel);
+  </script>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <section class="faq-section">
+    <div class="faq-container">
+        <h2>Ko`p beriladigan savollar</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">To'g'ri o'quv markazini qanday tanlash mumkin?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>TalabaWay reytingi haqiqatga tayanadi — subyektiv reklamalarga emas.
+Biz har bir universitetni 7 ta aniq mezon asosida, mustaqil, shaffof va faktlarga tayanib baholaymiz.
+Har bir ko‘rsatkich uchun mustaqil ma'lumotlar manbalardan (statistika, rasmiy saytlar, so‘rovnomalar) yig‘iladi va ochiq baholash metodologiyasi asosida tahlil qilinadi.
+Shuning uchun TalabaWay reytingi — bu reklama yoki obro‘ emas, balki real faktlar va foydalanuvchi uchun qulay qaror qabul qilish vositasidir.
+Siz tanlov qilyapsiz – biz esa sizga ishonchli yo‘l ko‘rsatamiz.
+            </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">O‘quv markazlarida sinov darslari bormi?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Reytinglar sizga chalkashliklar ichidan aniq yo‘nalish topishga yordam beradi.
+Universitetlar ko‘p, lekin ularning barchasi ham siz uchun mos emas. Siz universitetlarni sifat, xalqaro daraja, infratuzilma va ishga joylashish imkoniyati bo‘yicha solishtirishingiz mumkin. Siz qaror qabul qilayotganda his-tuyg‘u yoki reklama emas, raqamlar va faktlarga tayanasiz. Reytinglar — bu siz uchun tayyor qilingan xarita.
+            </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Qanday qilib o'quv markazi bilan bevosita bog'lanishim mumkin?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>TalabaWay reytinglari 7 ta asosiy mezon asosida hisoblab chiqiladi. Har bir mezon muhimlik darajasiga (foiz) ega bo‘lib, yakuniy ball shular asosida shakllanadi.
+
+📊 Reyting mezonlari va ularning ulushi:
+Akademik sifat (25%)
+
+Professor-o‘qituvchilarning darajasi
+
+Ilmiy maqolalar soni
+
+Tadqiqot ishlari va grantlar
+
+Bitiruvchilarning ishga joylashuvi (20%)
+
+Ishga joylashish darajasi
+
+Yirik kompaniyalar bilan hamkorlik
+
+Bitiruvchilarning o‘rtacha maoshi
+
+Xalqaro aloqalar (15%)
+
+Xorijiy talaba va o‘qituvchilar soni
+
+Xalqaro almashinuv dasturlari (Erasmus, 2+2, double degree)
+
+Talabalar fikri (15%)
+
+So‘rovnomalar orqali to‘plangan real talabalar baholari
+
+O‘quv jarayoni, sharoit va muhit bo‘yicha baholar
+
+Infratuzilma (10%)
+
+Kutubxona, laboratoriyalar, internet, kampus
+
+Yotoqxona, ovqatlanish, sport va madaniy hayot
+
+Ta’lim narxi (10%)
+
+O‘qish narxi va stipendiyalar
+
+Moliyaviy qulaylik va imkoniyatlar
+
+Kirish darajasi (5%)
+
+O‘tish ballari
+
+Tanlov darajasi
+
+
+                </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Darslar qancha turadi?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Chunki reytinglar talabaga vaqtni, pulni va hayotni to‘g‘ri yo‘naltirishga yordam beradi.
+Universitet tanlash — bu hayotdagi eng muhim qarorlardan biri. Reytinglar sizga quyidagilarda yordam beradi:
+Reytinglar orqali siz o‘zingizning maqsadingizga mos bo‘lgan universitetni aniqlaysiz:
+– Kimdir ilmiy izlanishlar uchun izlaydi,
+– Kimdir yaxshi infratuzilma yoki xorijga chiqish imkoniyatini izlaydi.
+Reyting bularni taqqoslab beradi. Reklamalarga ishonmasdan, faktlar va raqamlar asosida qaror qilish imkonini beradi.
+Bu sizga pul va vaqtingizni behuda sarflashdan saqlaydi.
+
+
+            </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Har qanday byudjet yoki bepul variantlar bormi?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Rasmiy saytlar sizga universitetning qanday ko‘rinishni istashini ko‘rsatadi. Reytinglar esa uning asl holatini ochib beradi. “Rasmiy sayt — bu vitrina. Reyting — bu ichkariga qarash.”
+Yaxshi tanlov qilish uchun ikkisini ham ko‘ring, lekin qarorni raqamlar va faktlar asosida qiling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+<div class="section-header">
+  <h2 class="title-yangiliklar">Foydali maqolalar & bloglar</h2>
+  <div class="underline"></div>
+  <p class="subtitle-yangiliklar">So'nggi yangiliklardan biz bilan xabardor bo'ling</p>
+</div>
+
+
+	<section class="reaserches-and-blogs">
+<div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <img src="images/research-img1.jpg" alt="">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">Maqola</h3>
+                    <h4 class="card-main-title"></h4>
+                </div>
+                <p class="card-content">Universitetlar — bu oliy ta’lim muassasalari bo‘lib, akademik, kasbiy va ilmiy yo‘nalishlarda ta’lim beradi. Ular malakali mutaxassislar tayyorlash, bilimlarni rivojlantirish...</p>
+                <a href="#" class="read-more-btn">Batafsil</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+        <figure class="shape-box shape-box_half">
+            <img src="images/research-img2.jpg">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">Maqola</h3>
+                    <h4 class="card-main-title"></h4>
+                </div>
+                <p class="card-content"> Dunyo bo‘yicha universitetlar o‘lchami, ixtisoslashuvi va reytingi bilan farqlanadi. Obro‘siga ta’lim sifati, ishga joylashish va xalqaro hamkorlik ta’sir qiladi...</p>
+                <a href="#" class="read-more-btn">Batafsil</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+
+
+        <figure class="shape-box shape-box_half">
+            <img src="images/research-img3.jpg">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">Blog</h3>
+                    <h4 class="card-main-title"></h4>
+                </div>
+                <p class="card-content">Universitet tanlash hayotingizdagi eng muhim qarorlardan biridir. To‘g‘ri tanlov sizning bilim darajangiz, kasbiy yo‘lingiz va kelajakdagi muvaffaqiyatingizga ta’sir qiladi...</p>
+                <a href="#" class="read-more-btn">Batafsil</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="heading">
+    <span class="blue">O`quv Markazingizni</span>
+    <span class="black">qo`shing</span>
+     <p class="description">Veb-saytimizda talabalar tomonidan qidirilgan eng mashhur O`quv Markazlar</p>
+  </div>
+
+
+<section class="training-centre-section-add">
+<div class="container-tr-add">
+  
+  <a class="card4" href="#">
+    
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-19" transform="translate(-874.000000, -1729.000000)" stroke-width="1.5">
+            <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g id="Group-42" transform="translate(166.000000, 0.000000)">
+                        <g id="Group-25" transform="translate(21.000000, 25.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 17.666667)">
+                                <path d="M14,8.33306667 L14,12.3330667" id="Stroke-3" stroke="#CD3D73"></path>
+                                <polyline id="Stroke-1" stroke="#666666" points="18 4.33306667 18 12.3330667 10 12.3330667"></polyline>
+                                <polyline id="Stroke-5" stroke="#666666" points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"></polyline>
+                                <polygon id="Stroke-7" stroke="#666666" points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"></polygon>
+                            </g>
+                            <path d="M20,23.9997333 L14,17.9997333" id="Stroke-10" stroke="#666666"></path>
+                            <g id="Group-15" transform="translate(5.666667, 0.000000)" stroke="#666666">
+                                <polygon id="Stroke-11" points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"></polygon>
+                                <path d="M24.3333333,7.99973333 L16.3333333,-0.000266666667" id="Stroke-13"></path>
+                            </g>
+                            <path d="M16,6.8148 L16,14.0001333" id="Stroke-16" stroke="#666666"></path>
+                            <polyline id="Stroke-17" stroke="#666666" points="28 5.99973333 28 23.9997333 24 23.9997333"></polyline>
+                            <path d="M8,13.9997333 L8,7.99973333" id="Stroke-19" stroke="#666666"></path>
+                            <path d="M20,8.99973333 L20,9.99973333" id="Stroke-20" stroke="#CD3D73"></path>
+                            <path d="M24,8.99973333 L24,9.99973333" id="Stroke-21" stroke="#CD3D73"></path>
+                            <path d="M20,13.9997333 L20,14.9997333" id="Stroke-22" stroke="#CD3D73"></path>
+                            <path d="M24,13.9997333 L24,14.9997333" id="Stroke-23" stroke="#CD3D73"></path>
+                            <path d="M24,18.9997333 L24,19.9997333" id="Stroke-24" stroke="#CD3D73"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+    <h3>O`quv Markazini Qo`shish</h3>
+    <p class="small">O`quv markazingizni qo`shing va biz bilan rivojlaning</p>
+    <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+  
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer-section">
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <img src="images/TalabaWay-logo.png" alt="Logo" class="footer-logo" />
+        <h3>TalabaWay</h3>
+        <p>
+          To‘g‘ri taʼlim yo‘lini tanlashingizda yordam beramiz.
+        </p>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Navigatsiya</h4>
+        <ul>
+          <li><a href="example.html">Bosh sahifa</a></li>
+          <li><a href="reytinglar.html">Reytinglar</a></li>
+          <li><a href="o`quv-markazlari.html">O‘quv markazlari</a></li>
+          <li><a href="yangiliklar.html">Yangiliklar</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Qoʻshimcha maʼlumotlar</h4>
+        <ul>
+          <li>Email: info@talabaway.com</li>
+          <li>Telefon: +998 (99) 123-12-14</li>
+          <li>Telegram: @talabaway</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gargantyua. Barcha huquqlar himoyalangan</p>
+    </div>
+  </footer>
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+   

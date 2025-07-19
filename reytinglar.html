@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Reytinglar sahifasi</title>
+  <link rel="icon" href="TalabaWay-logo.png" type="image/png" />
+
+<style>
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #0d1554;
+      text-align: center;
+    }
+
+/* Navbar Styles */
+ nav {
+      background-color: #0A1632;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 80px;
+        height: 70px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+
+
+      /* Navbar Container */
+      nav {
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: center;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .container button {
+      margin-top: 20px; 
+      padding: 10px 15px; 
+      background-color: white; 
+      color: #00063F; 
+      border: none; 
+      border-radius: 5px;
+    }
+
+    .universe-cards {
+      text-decoration: none;
+    }
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+     .signin-button {
+  background-color: white;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.signin-button:hover {
+  background-color: #f0f9ff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+ .hero {
+      position: relative;
+      height: 35px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 100px 60px 160px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.hero-content h1 .highlight {
+  color: #fff;
+  background-color: #1e3a8a;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.hero-content h1 {
+  color: white;
+}
+
+.hero-content h1 {
+      position: relative;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 900;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .popular-ratings{
+   font-family:  'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      padding: 40px;
+}
+
+.popular-ratings h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+ .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card_q {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #e0e7ff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideUp 0.6s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card_q:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .card_q:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .card_q:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .card_q img {
+      width: 100%;
+      height: auto;
+      border-bottom: 4px solid #1e3a8a;
+    }
+
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card_q h3 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      font-weight: 600;
+      color: #111827;
+      text-align: left;
+    }
+
+    .card_q p {
+      font-size: 15px;
+      color: #374151;
+      flex-grow: 1;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .card_q a {
+      background-color: #4da6ff;
+  color: white;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+    }
+
+    .card_q a:hover {
+      box-shadow:
+        0 0 5px #4da6ff,
+        0 0 10px #4da6ff,
+        0 0 20px #4da6ff;
+      transform: scale(1.05);
+    }
+
+
+    .arrow {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card_q {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      .card_q:hover {
+        transform: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      font-weight: 800;
+      position: relative;
+      text-align: center;
+      color: #001834;
+      font-family:  'Inter', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family:  'Inter', sans-serif;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 16px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #e6e6e6;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 75px;
+      height: 75px;
+      margin-bottom: 16px;
+      border-radius: 50%;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      font-weight: 650;
+      color: #001834;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #001834;
+    }
+    
+    .divider {
+      margin-top: 50px;
+      height: 3px;
+      width: 80%;
+      background: #1e3a8a;
+      border-radius: 2px;
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+   
+
+     .university-list h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      font-family:  'Inter', sans-serif;
+    }
+
+    .ranking-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .ranking-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .ranking-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .rank-number {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .university-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .score-label {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .score {
+      background: linear-gradient(90deg, #2b4eae, #1e3a8a);
+      color: white;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 24px;
+    }
+
+    .divider-2 {
+      margin-top: 40px;
+      height: 3px;
+      width: 80%;
+      background: #1e3a8a;
+      border-radius: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
+
+
+    .school-lists h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      font-family:  'Inter', sans-serif;
+    }
+
+    .school-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+      font-family:  'Inter', sans-serif;
+    }
+
+    .school-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .school-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .school-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .school-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .school-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .info-button {
+      background:  #1e3a8a;
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 26px;
+      font-weight: 750;
+      cursor: pointer;
+      transition: background 0.3s ease;   
+      text-decoration: none;
+    }
+
+    .info-button:hover {
+      background: #2b4eae;
+    }
+
+    .button-wrapper-2 {
+      margin-top: 32px;
+    }
+
+    .load-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .load-more:hover {
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+    }
+
+    .divider-3 {
+      margin-top: 40px;
+      height: 3px;
+      width: 80%;
+      background: #1e3a8a;
+      border-radius: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .site-footer {
+  background: linear-gradient(90deg, #0A1632, #1e3a8a);
+  color: white;
+  font-family:  'Inter', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-top: 8px solid #00063F;
+  border-bottom: 8px solid #00063F;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: white;
+  color: #001834;
+  font-weight: 500;
+  padding: 0.2px 0;
+}
+
+
+.site-footer {
+  position: relative;
+  text-align: left;
+  justify-content: left;
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+.universe-cards {
+  text-decoration: none;
+}
+
+.logo-link {
+      text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+ <!-- Navbar -->
+  <nav>
+    <a href="example.html" class="logo-link">
+    <div class="logo">
+      <img class="gargantyua-logo" src="images/TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
+    </div>
+  </a>
+    
+   
+    
+        <div class="nav-links" id="navLinks">
+          <a href="example.html">Bosh sahifa</a>
+          <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+          <a href="reytinglar.html">Reytinglar</a>
+          <a href="yangiliklar.html">Yangiliklar</a>
+          <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+        </div>
+
+        <div class="signin">
+          <a href="login.html" class="signin-button">Kirish</a>
+        </div>
+
+  </nav>
+
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+       <h1>Universitetlar va litseylar<span class="highlight">sahifasi</span></h1>
+      </div>
+    </div>
+      
+
+
+  </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="popular-ratings">
+    <h2>Ommabop Reytinglar</h2>
+    <div class="card-grid">
+    <!-- Card 1 -->
+    <div class="card_q">
+      <img src="images/TalabaWay-university.png" alt="2025">
+      <div class="card-content">
+        <h3>Toshkent Universitetlar Reytingi</h3>
+        <p>Toshkentning eng yaxshi universitetlarini kashf eting</p>
+        <a href="universitetlar-reytingi-sahifasi.html">Batafsil <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card_q">
+      <img src="images/TalabaWay-litsey.png" alt="2025">
+      <div class="card-content">
+        <h3>Toshkent Litseylari Reytingi</h3>
+        <p>Toshkentning Eng yaxshi universitetlardan birida o'qish. Litseylar reytingini o'rganing.</p>
+        <a href="litseylar-sahifasi.html">Batafsil <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card_q">
+      <img src="images/TalabaWay-training-centres.png" alt="2025">
+      <div class="card-content">
+        <h3>O`quv markazlari</h3>
+        <p>Siz tanlagan fan bo'yicha qaysi o`quv markazi ustunligini bilib oling.</p>
+        <a href="o`quv-markazlari.html">Batafsil <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="university-list">
+    <h1>Universitetlar Reytingi</h1>
+
+    <div class="ranking-list">
+      <div class="ranking-item">
+        <div class="left">
+          <div class="rank-number">1</div>
+          <img class="logo" src="images/CAU-log.png" alt="Logo">
+          <div class="university-name">Central Asian University</div>
+        </div>
+        <div class="right">
+          <span class="score-label">Umumiy ball</span>
+          <div class="score">87.9</div>
+        </div>
+      </div>
+  
+      <div class="ranking-item">
+        <div class="left">
+          <div class="rank-number">2</div>
+          <img class="logo" src="images/milliy-university.png" alt="Logo">
+          <div class="university-name">Mirzo Ulug`bek nomidagi O`zbekiston Milliy Universiteti</div>
+        </div>
+        <div class="right">
+          <span class="score-label">Umumiy ball</span>
+          <div class="score">85.9</div>
+        </div>
+      </div>
+  
+      <div class="ranking-item">
+        <div class="left">
+          <div class="rank-number">3</div>
+          <img class="logo" src="images/west-university.jpg" alt="Logo">
+          <div class="university-name">Westminster international university in tashkent</div>
+        </div>
+        <div class="right">
+          <span class="score-label">Umumiy ball</span>
+          <div class="score">77.9</div>
+        </div>
+      </div>
+  
+      <div class="ranking-item">
+        <div class="left">
+          <div class="rank-number">4</div>
+          <img class="logo" src="images/mdis-university.jpg" alt="Logo">
+          <div class="university-name">Management Development Institute of Singapore in Tashkent</div>
+        </div>
+        <div class="right">
+          <span class="score-label">Umumiy ball</span>
+          <div class="score">72.3</div>
+        </div>
+      </div>
+  
+      <div class="ranking-item">
+        <div class="left">
+          <div class="rank-number">5</div>
+          <img class="logo" src="images/ajou-university.png" alt="Logo">
+          <div class="university-name">Ajou University</div>
+        </div>
+        <div class="right">
+          <span class="score-label">Umumiy ball</span>
+          <div class="score">62.5</div>
+        </div>
+      </div>  
+    </div>
+    
+    <div class="button-wrapper-2">
+      <a href="universitetlar-reytingi-sahifasi.html" class="load-more">Davomi →</a>
+    </div>
+  
+    <div class="divider-2"></div>
+
+  </section>
+
+ 
+
+  <section>
+    <div class="school-lists">
+      <h1>Sizning ideal litseyingiz shu yerda</h1>
+    </div>
+    
+      <div class="school-list">
+        <div class="school-card">
+          <div class="school-info">
+            <img src="images/westminister-lycium.jpg" alt="Artel Logo" class="school-logo">
+            <div class="school-name">Westminister litseyi</div>
+          </div>
+          <a href="litseylar-sahifasi.html" class="info-button">BATAFSIL</a>
+        </div>
+    
+        <div class="school-card">
+          <div class="school-info">
+            <img src="images/JIDU-lycium.jpg" alt="Artel Logo" class="school-logo">
+            <div class="school-name">Jahon Iqtisodiyoti va Diplomatiya Universiteti Qoshidagi Akademik Litsey</div>
+          </div>
+          <a href="litseylar-sahifasi.html" class="info-button">BATAFSIL</a>
+        </div>
+    
+        <div class="school-card">
+          <div class="school-info">
+            <img src="images/inter-house-lyceum.png" alt="Artel Logo" class="school-logo">
+            <div class="school-name">Inter-house litseyi</div>
+          </div>
+          <a href="litseylar-sahifasi.html" class="info-button">BATAFSIL</a>
+        </div>
+    
+        <div class="school-card">
+          <div class="school-info">
+            <img src="images/Jaxon-tillari-lyceum.png" alt="Artel Logo" class="school-logo">
+            <div class="school-name">Jahon Tillari Universiteti Qoshidagi Akademik litseyi</div>
+          </div>
+          <a href="litseylar-sahifasi.html" class="info-button">BATAFSIL</a>
+        </div>
+    
+        <div class="school-card">
+          <div class="school-info">
+            <img src="images/KMTI-lyceum.webp" alt="Artel Logo" class="school-logo">
+            <div class="school-name">Kimyo-Texnologiya Instituti Qoshidagi Akademik litseyi</div>
+          </div>
+          <a href="litseylar-sahifasi.html" class="info-button">BATAFSIL</a>
+        </div>
+      </div>
+    
+      <div class="button-wrapper-2">
+        <a href="litseylar-sahifasi.html" class="load-more">Davomi →</a>
+      </div>
+    
+  </section>
+
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <img src="images/TalabaWay-logo.png" alt="Logo" class="footer-logo" />
+          <h3>TalabaWay</h3>
+          <p>
+            To‘g‘ri taʼlim yo‘lini tanlashingizda yordam beramiz.
+          </p>
+        </div>
+    
+        <div class="footer-divider"></div>
+    
+        <div class="footer-column">
+          <h4>Navigatsiya</h4>
+          <ul>
+            <li><a href="example.html">Bosh sahifa</a></li>
+            <li><a href="reytinglar.html">Reytinglar</a></li>
+            <li><a href="o`quv-markazlari.html">O‘quv markazlari</a></li>
+            <li><a href="yangiliklar.html">Yangiliklar</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-divider"></div>
+    
+        <div class="footer-column">
+          <h4>Qoʻshimcha maʼlumotlar</h4>
+          <ul>
+            <li>Email: info@talabaway.com</li>
+            <li>Telefon: +998 (99) 123-12-14</li>
+            <li>Telegram: @talabaway</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>© 2025 Gargantyua. Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+</body>
+</html>

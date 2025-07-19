@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World University Rankings</title>
+  <link rel="icon" href="gargantyua-logo.png" type="image/png" />
+  <style>
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b132b;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 65%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #C7A052;
+  font-weight: 650px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #e7b044;
+}
+
+/* Ranking list styles */
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c2541;
+  padding: 35px 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ranking-item:hover {
+  background-color: #04132A;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #C7A052;
+  min-width: 30px;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 4px;
+}
+
+.more-btn {
+  padding: 15px 20px;
+  background-color: #d4a248;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 20px;
+}
+
+.more-btn:hover {
+  background-color: #e7b044;
+}
+
+.main-section {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Styles */
+nav {
+      background-color: #07172E;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #C7A052;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 70px;
+        height: 50px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+    .search-logo {
+        width: 65px;
+        height: 60px;
+    }
+
+
+
+
+.md-hidden img {
+        width: 65px;
+        height: 60px;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+      /* Navbar Container */
+      nav {
+      background-color: #07172E;
+      padding: 1px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: right;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: right;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: right;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+
+
+
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+
+    .signin-button {
+  background-color: #b8903c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 650;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #C7A052;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+  <section class="Navbar">
+     <!-- Navbar -->
+     <nav>
+        <a href="example.html" class="logo-link">
+      <div class="logo">
+        <img class="gargantyua-logo" src="gargantyua-logo.png"> <span class="main-word" >GARGANTYUA</span>
+      </div>
+        </a>
+      
+     
+      
+          <div class="nav-links" id="navLinks">
+            <a href="example.html">Bosh sahifa</a>
+            <a href="reytinglar.html">Reytinglar</a>
+            <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+            <a href="yangiliklar.html">Yangiliklar</a>
+            <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+          </div>
+  
+          <div class="signin">
+            <a href="login.html" class="signin-button">Kirish</a>
+          </div>
+
+    </nav>
+
+  </section>
+
+
+  <section class="main-section">
+  <div class="container">
+    <h1>Toshkent Litseylari Reytingi</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for university" />
+      <button>Qidirish</button>
+    </div>
+
+    <div class="ranking-list">
+      <div class="ranking-item">
+        <div class="rank">1</div>
+        <div class="info">
+          <div class="name">Westminister litseyi</div>
+          <div class="details">O`zbekiston, Toshkent shahri</div>
+        </div>
+        <button class="more-btn">Batafsil</button>
+      </div>
+
+      <div class="ranking-item">
+        <div class="rank">2</div>
+        <div class="info">
+          <div class="name">Turin Politexnika litseyi</div>
+          <div class="details">O`zbekiston, Toshkent shahri</div>
+        </div>
+        <button class="more-btn">Batafsil</button>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+
+

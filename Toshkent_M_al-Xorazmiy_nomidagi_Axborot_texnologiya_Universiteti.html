@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toshkent M. al-Xorazmiy nomidagi Axborot texnologiya Universiteti</title>
+    <link rel="icon" href="gargantyua-logo.png" type="image/png" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b132b;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 65%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #C7A052;
+  font-weight: 650px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #e7b044;
+}
+
+/* Ranking list styles */
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c2541;
+  padding: 35px 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ranking-item:hover {
+  background-color: #04132A;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #C7A052;
+  min-width: 30px;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 4px;
+}
+
+.more-btn {
+  padding: 15px 20px;
+  background-color: #d4a248;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 20px;
+}
+
+.more-btn:hover {
+  background-color: #e7b044;
+}
+
+.main-section {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Styles */
+nav {
+      background-color: #07172E;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #C7A052;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 70px;
+        height: 50px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+    .search-logo {
+        width: 65px;
+        height: 60px;
+    }
+
+
+
+
+.md-hidden img {
+        width: 65px;
+        height: 60px;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+      /* Navbar Container */
+      nav {
+      background-color: #07172E;
+      padding: 1px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: right;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: right;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: right;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+
+
+
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+
+
+    .signin-button {
+  background-color: #b8903c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 650;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #C7A052;
+}
+
+.universe-cards {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.card {
+      padding: 30px;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+    }
+
+    .university-name {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .location {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+
+    .button {
+      margin-top: 20px;
+      background-color: #d8b351;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .socials {
+      display: flex;
+      gap: 23px;
+      margin-top: 20px;
+    }
+
+    .socials i {
+      font-size: 40px;
+      color: #d8b351;
+      border: 1px solid #d8b351;
+      border-radius: 50%;
+      padding: 13px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .socials i:hover {
+      background-color: #d8b351;
+      color: #0d1a3b;
+    }
+
+    .divider {
+      border-top: 2px solid #d8b351;
+      margin: 30px 0;
+    }
+
+    .rankings {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .ranking-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .ranking-box img {
+      width: 80px;
+      border-radius: 50px;
+    }
+
+    .ranking-text {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .rankings {
+        flex-direction: column;
+      }
+    }
+
+
+
+    .fab fa-facebook-f {
+        width: 75px;
+        height: auto;
+    }
+
+
+
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      margin-top: 15px;
+      margin-left: 170px;
+    }
+
+    .universe-cards {
+        text-decoration: none;
+    }
+
+
+
+
+
+ .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-wrapper img {
+  width: 550px;
+  height: 420px;
+  border-radius: 12px;
+}
+
+.text-wrapper {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-box {
+  background-color: #C7A052;
+  color: black;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.description {
+  background-color: #C7A052;
+  font-weight: normal;
+}
+
+.span-word {
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+.info-grid {
+  max-width: 800px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-rows: auto 2px auto;
+  gap: 20px 40px;
+  align-items: start;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.exam-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exam-list li {
+  font-size: 16px;
+  color: #d5b14d;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 26px;
+}
+
+.exam-list li span {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d5b14d;
+  border-radius: 50%;
+}
+
+.number {
+  font-size: 38px;
+  color: #d5b14d;
+  font-weight: bold;
+  margin: 0;
+}
+
+.left-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.right-top {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.divider-horizontal {
+  grid-column: 1 / span 3;
+  height: 2px;
+  background-color: #d5b14d;
+  margin-top: 10px;
+}
+
+.left-bottom {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.right-bottom {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* ====== ANIMATION CLASSES ====== */
+.box {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.animate-fade {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contract-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.top-row, .price-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  background-color: #c3a74e;
+  padding: 20px 30px;
+  border-radius: 14px;
+  font-size: 24px;
+  color: #0b1735;
+  font-weight: 500;
+  min-width: 416px;
+  line-height: 1.5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-box strong {
+  font-size: 32px;
+  color: white;
+}
+
+.price-box {
+  background-color: #c3a74e;
+  padding: 18px 25px;
+  border-radius: 14px;
+  min-width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.price-box .label {
+  display: block;
+  font-size: 24px;
+  color: #0b1735;
+  margin-bottom: 8px;
+}
+
+.price-box .price {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .top-row, .price-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+.info-box, .price-box {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-box:nth-child(2),
+.price-box:nth-child(2) { animation-delay: 0.1s; }
+
+.price-box:nth-child(3) { animation-delay: 0.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+.carousel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0;
+}
+
+
+
+
+
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 500px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c3a74e;
+  border: none;
+  padding: 6px 15px;
+  font-size: 28px;
+  color: #0b132b;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+
+.tittless {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FAQ {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+  margin-bottom: 70px;
+}
+
+
+
+.education-programs {
+  width: 100%;
+  max-width: 850px;
+}
+
+.talim {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 32px;  
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.tab {
+  flex: 1;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+}
+
+.tab.active {
+  border-color: #c3a74e;
+}
+
+.accordion {
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  padding: 15px 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+}
+
+.accordion-header span {
+  font-size: 30px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion-header span {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  color: #ddd;
+  transition: max-height 0.4s ease;
+  padding-left: 10px;
+}
+
+.accordion.active .accordion-content {
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+.accordion-container {
+  display: none;
+}
+
+.accordion-container.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+  margin-top: 50px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-top: 8px solid #C7A052;
+  border-bottom: 8px solid #C7A052;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+  color: #C7A052;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: #C7A052;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #fff;
+  color: #001834;
+  font-weight: 500;
+  padding: 0.2px 0;
+}
+
+
+.faq-container h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.university-cards-div {
+  text-decoration: none;
+}
+
+    
+
+    </style>
+</head>
+<body>
+      <section class="Navbar">
+     <!-- Navbar -->
+     <nav>
+      <a href="example.html" class="logo-link">
+      <div class="logo">
+        <img class="gargantyua-logo" src="gargantyua-logo.png"> <span class="main-word" >GARGANTYUA</span>
+      </div>
+      </a>
+      
+     
+      
+          <div class="nav-links" id="navLinks">
+            <a href="example.html">Bosh sahifa</a>
+            <a href="reytinglar.html">Reytinglar</a>
+            <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+            <a href="yangiliklar.html">Yangiliklar</a>
+            <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+          </div>
+
+          <div class="signin">
+            <a href="login.html" class="signin-button">Kirish</a>
+          </div>
+  
+    </nav>
+
+  </section>
+
+
+
+
+
+
+
+  
+<div class="card">
+  <div class="header">
+    <img src="TATU-logo.png" alt="Logo">
+    <div>
+      <div class="university-name">Toshkent M. al-Xorazmiy nomidagi Axborot texnologiya Universiteti</div>
+      <div class="location"><i class="fas fa-location-dot"></i> Toshkent shahar, Amir Temur shox ko‘chasi 108 uy</div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="https://tuit.uz/" class="universe-cards">
+    <button class="button">BATAFSIL</button>
+    </a>
+    <div class="socials">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="rankings">
+    <div class="ranking-box">
+      <img src="qs-logo.png" alt="QS">
+      <div class="ranking-text">QS Osiyo reytingida<br><strong>#541</strong> o‘rinda</div>
+    </div>
+    <div class="ranking-box">
+      <img src="qs-logo.png" alt="QS">
+      <div class="ranking-text">QS O‘rta Osiyo reytingida<br><strong>#34</strong> o‘rinda</div>
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="main-container">
+    <div class="image-wrapper">
+      <img src="TATU-campus.jpg" alt="Universitet binosi">
+    </div>
+    <div class="text-wrapper">
+      <div class="text-box description">
+        TATU - 28 Iyun 1955 yili tashkil topgan bolib u kuchli infratuzilmasi, boy xalqaro aloqalari, faol talabalar hayoti va texnologik va global ishtirokini mustahkamlashga intilishlari bilan Oʻzbekistonning yetakchi universitetidir.
+      </div>
+      <div class="text-box">Tashkil topgan yili : <span class="span-word">1918</span></div>
+      <div class="text-box">Fakultetlar soni : <span class="span-word">9</span></div>
+      <div class="text-box">Professor o‘qituvchilar : <span class="span-word">1 800</span></div>
+      <div class="text-box">Kafedralar soni : <span class="span-word">30</span></div>
+    </div>
+  </div>
+
+
+
+
+   <div class="info-grid">
+    <div class="box left-top animate-left">
+      <p class="title">Kirish imtihoni</p>
+      <ul class="exam-list">
+        <li><span></span> Adabiyot</li>
+        <li><span></span> Tarix</li>
+        <li><span></span> Matematika</li>
+      </ul>
+    </div>
+    <div class="box right-top animate-right">
+      <p class="title">Davlat granti uchun o`tish bali</p>
+      <p class="number">185</p>
+    </div>
+    <div class="divider-horizontal animate-fade"></div>
+    <div class="box left-bottom animate-left">
+      <p class="title">Talabalar soni</p>
+      <p class="number">34 941</p>
+    </div>
+    <div class="box right-bottom animate-right">
+      <p class="title">Ta`lim yo`nalishlari</p>
+      <p class="number">56</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <section class="contract-section">
+    <h2 class="section-title">To `lov-kontrakt narxi</h2>
+
+    <div class="top-row">
+      <div class="info-box">To `lov kontrakt narxlari <br> PDF formatida</div>
+      <div class="info-box">
+        Moliyaviy yordam <br>
+        <strong>Stipendiya va Grant</strong>
+      </div>
+    </div>
+
+    <div class="price-row">
+      <div class="price-box">
+        <span class="label">Bakalavriat</span>
+        <span class="price">7 580 000 s`om</span>
+      </div>
+      <div class="price-box">
+        <span class="label">Bakalavriat kechki</span>
+        <span class="price">7 580 000 s`om</span>
+      </div>
+      <div class="price-box">
+        <span class="label">Magistratura</span>
+        <span class="price">7 580 000 s`om</span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<section class="FAQ">
+
+    <div class="education-programs">
+    <h2 class="talim">Ta’lim dasturlari</h2>
+    <div class="tabs">
+      <button class="tab active" data-target="bakalavriat">Bakalavriat</button>
+      <button class="tab" data-target="magistratura">Magistratura</button>
+    </div>
+
+    <div class="accordion-container active" id="bakalavriat">
+      <div class="accordion">
+        <div class="accordion-header">Matematika fakulteti <span>+</span></div>
+      <a href="https://nuu.uz/matematik-analiz-kafedrasi/" class="university-cards-div">
+      <div class="accordion-content">Matematik analiz</div>
+     </a>
+      <a href="https://nuu.uz/algebra-va-funksional-analiz-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Algebra va funksional analiz</div>
+        </a>
+        <a href="https://nuu.uz/geometriya-va-topologiya-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Geometriya va topologiya</div>
+        </a>
+        <a href="https://nuu.uz/differensial-tenglamalar-va-matematik-fizika-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Differensial tenglamalar va matematik fizika</div>
+        </a>
+        <a href="https://nuu.uz/ehtimollar-nazariyasi-va-matematik-statistika-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Ehtimollar nazariyasi va matematik statistika</div>
+        </a>
+        <a href="https://nuu.uz/mexanika-va-matematik-modellashtirish/" class="university-cards-div">
+        <div class="accordion-content">Mexanika va matematik modellashtirish</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Amaliy matematika va intellektual texnologiyalar fakulteti <span>+</span></div>
+        <a href="https://nuu.uz/suniy-intellekt-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Sun’iy intellekt kafedrasi</div>
+        </a>
+        <a href="https://nuu.uz/amkt/" class="university-cards-div">
+        <div class="accordion-content">Amaliy matematika va kompyuter tahlili</div>
+        </a>
+        <a href="https://nuu.uz/algoritmlar-va-dasturlash-texnologiyalari-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Algoritmlar va dasturlash texnologiyalari</div>
+        </a>
+        <a href="https://nuu.uz/axborot-xavfsizligi-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Axborot xavfsizligi</div>
+        </a>
+        <a href="https://nuu.uz/hisoblash-matematikasi-va-axborot-tizimlari/" class="university-cards-div">
+        <div class="accordion-content">Hisoblash matematikasi va axborot tizimlari</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Fizika fakulteti <span>+</span></div>
+        <a href="https://nuu.uz/nazariy-fizika-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Nazariy fizika</div>
+        </a>
+        <a href="https://nuu.uz/yadro-fizikasi-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Yadro fizikasi</div>
+        </a>
+        <a href="https://nuu.uz/yarimotkazgichlar-va-polimerlar-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Yarimo‘tkazgichlar va polimerlar fizikasi</div>
+        </a>
+        <a href="https://nuu.uz/fotonika-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Fotonika</div>
+        </a>
+        <a href="https://nuu.uz/umumiy-fizika-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Umumiy fizika</div>
+        </a>
+        <a href="https://nuu.uz/astronomiya-va-astrofizika-kafedrasi/" class="university-cards-div"></a>
+        <div class="accordion-content">Astronomiya va astrofizika</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Biologiya fakulteti <span>+</span></div>
+        <a href="https://nuu.uz/botanika-va-osimliklar-fiziologiyasi-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Botanika va o‘simliklar fiziologiyasi</div>
+        </a>
+        <a href="https://nuu.uz/zoologiya-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Zoologiya</div>
+        </a>
+        <a href="https://nuu.uz/odam-va-hayvonlar-fiziologiyasi-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Odam va hayvonlar fiziologiyasi</div>
+        </a>
+        <a href="https://nuu.uz/genetika-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Genetika</div>
+        </a>
+        <a href="https://nuu.uz/mikrobiologiya-va-biotexnologiya-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Mikrobiologiya va biotexnologiya</div>
+        </a>
+        <a href="https://nuu.uz/biofizika-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Biofizika</div>
+        </a>
+        <a href="https://nuu.uz/biokimyo-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Biokimyo</div>
+        </a>
+        <a href="https://nuu.uz/tuproqshunoslik-kafedrasi/" class="university-cards-div">
+        <div class="accordion-content">Tuproqshunoslik</div> 
+        </a> 
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Ekologiya fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Ekologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Ekologik monitoring</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Kimyo fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Noorganik kimyo</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Organik kimyo</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Analitik kimyo</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Fizikaviy kimyo</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Polimerlar kimyosi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Organik sintez va amaliy kimyo</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Umumiy va neft-gaz kimyosi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Tabiiy birikmalar kimyosi</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Xorijiy filologiya fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Ingliz tilshunosligi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Amaliy ingliz tili va adabiyotshunoslik</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Tarjima  nazariyasi va  qiyosiy tilshunoslik</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Xorijiy til va adabiyoti</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Nemis filologiyasi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Fransuz filologiyasi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Fakultetlararo ingliz tili</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Iqtisodiyot fakulteti <span>+</span></div>
+         <a href="" class="university-cards-div">
+        <div class="accordion-content">Iqtisodiyot nazariyasi</div>
+        </a>
+         <a href="" class="university-cards-div">
+        <div class="accordion-content">Makroiqtisodiyot</div>
+        </a>
+         <a href="" class="university-cards-div">
+        <div class="accordion-content">Mintaqaviy iqtisodiyot va menejment</div>
+        </a>
+         <a href="" class="university-cards-div">
+        <div class="accordion-content">Ekonometrika va iqtisodiy modellashtirish</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Ijtimoiy fanlar fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Umumiy psixologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Ijtimoiy psixologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Pedagogika va umumiy psixologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Sotsiologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Ijtimoiy ish</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Falsafa va ma’naviyat asoslari</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Falsafa va mantiq</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Etika va estetika</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Huquqiy fanlar</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Siyosatshunoslik</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Jurnalistika fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Audiovizual va internet jurnalistikasi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Jamoatchilik bilan aloqalar va reklama</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Tarix fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">O‘zbekiston tarixi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Jahon tarixi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Arxeologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Manbashunoslik va arxivshunoslik</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Antropologiya va etnologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">O`zbekistonning eng yangi tarixi</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Geologiya va muhandislik geologiyasi fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Geologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Gidrogeologiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Geodinamika va tektonika</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Geokimyo va mineralogiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Geofizikaviy tadqiqot usullari</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Geografiya va geoaxborot tizimlari fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Tabiiy geografiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Iqtisodiy va ijtimoiy geografiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Kartografiya</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Geodeziya va geoinformatika</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Gidrometeorologiya fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Quruqlik gidrologiyasi;</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Meteorologiya va iqlimshunoslik</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Gidrometeorologiya va atrof muhit monitoringi</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Taekvondo va sport faoliyati fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Taekvondo va sport faoliyati</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Sport menejmenti</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Jismoniy tarbiya va sport</div>
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">O‘zbek filologiyasi fakulteti <span>+</span></div>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Kompyuter lingvistikasi va amaliy tilshunoslik</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">O‘zbek tilshunosligi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">O‘zbek adabiyotshunosligi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Rus  adabiyotshunosligi </div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Rus tilshunosligi</div>
+        </a>
+        <a href="" class="university-cards-div">
+        <div class="accordion-content">Fakultetlararo rus tili</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="accordion-container" id="magistratura">
+      <div class="accordion">
+        <div class="accordion-header">Magistratura fakulteti 1 <span>+</span></div>
+        <div class="accordion-content">Bu yerda magistratura yo'nalishlari.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">Magistratura fakulteti 2 <span>+</span></div>
+        <div class="accordion-content">Boshqa magistr yo'nalishlar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="tittless">O`zbekiston Milliy Universiteti bo‘ylab ekskursiya</h2>
+<section class="carousel-section">
+<div class="carousel-container">
+  <div class="carousel-track">
+    <img src="TATU_1.jpg" alt="Image 1" class="carousel-image" />
+    <img src="TATU_2.jpg" alt="Image 2" class="carousel-image" />
+    <img src="TATU_3.jpg" alt="Image 3" class="carousel-image" />
+    <img src="TATU_4.jpg" alt="Image 4" class="carousel-image" />
+    <img src="TATU_5.jpeg" alt="Image 5" class="carousel-image" />
+    <img src="TATU_6.jpg" alt="Image 6" class="carousel-image" />
+    <img src="TATU_7.jpg" alt="Image 7" class="carousel-image" />
+  </div>
+
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
+</section>
+
+<script src="carousel.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <img src="gargantyua-logo.png" alt="Logo" class="footer-logo" />
+        <h3>GARGANTYUA</h3>
+        <p>
+          To‘g‘ri taʼlim yo‘lini tanlashingizda yordam beramiz.
+        </p>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Navigatsiya</h4>
+        <ul>
+          <li><a href="example.html">Bosh sahifa</a></li>
+          <li><a href="reytinglar.html">Reytinglar</a></li>
+          <li><a href="o`quv-markazlari.html">O‘quv markazlari</a></li>
+          <li><a href="yangiliklar.html">Yangiliklar</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Qoʻshimcha maʼlumotlar</h4>
+        <ul>
+          <li>Email: info@gargantyua.com</li>
+          <li>Telefon: +998 (99) 123-12-14</li>
+          <li>Telegram: @GargantyuaTeam</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gargantyua. Barcha huquqlar himoyalangan</p>
+    </div>
+  </footer>
+
+</body>
+</html>

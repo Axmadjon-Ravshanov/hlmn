@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solishtiruv sahifasi</title>
+    <link rel="icon" href="TalabaWay-logo.png" type="image/png" />
+    <style>
+        body {
+      margin: 0;
+      font-family:  'Inter', sans-serif;
+      background-color: white;
+    }
+
+
+/* Navbar Styles */
+ nav {
+      background-color: #0A1632;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      margin-left: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .gargantyua-logo {
+        width: 80px;
+        height: 70px;
+    }
+
+    .main-word {
+        font-size: 25px;  
+        color: white;
+    }
+
+
+
+      /* Navbar Container */
+      nav {
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+      text-align: center;
+    }
+
+    /* Animated underline on hover */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+      }
+
+      .nav-links.open {
+        max-height: 300px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .container button {
+      margin-top: 20px; 
+      padding: 10px 15px; 
+      background-color: white; 
+      color: #00063F; 
+      border: none; 
+      border-radius: 5px;
+    }
+
+    .universe-cards {
+      text-decoration: none;
+    }
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+
+     .signin-button {
+  background-color: white;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.signin-button:hover {
+  background-color: #f0f9ff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+ .hero {
+      position: relative;
+      height: 35px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #0A1632, #1e3a8a);
+      padding: 100px 60px 160px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.hero-content h1 .highlight {
+  color: #fff;
+  background-color: #1e3a8a;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.hero-content h1 {
+  color: white;
+}
+
+.hero-content h1 {
+      position: relative;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vs_vs {
+   margin: 0;
+      padding: 40px;
+      font-family: "Segoe UI", sans-serif;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      box-sizing: border-box;
+}
+
+ .compare-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .card {
+      width: 550px;
+      height: 300px;
+      border-radius: 16px;
+      background: linear-gradient(to bottom, #f1f5f9 0%, white 100%);
+      border: 1px solid #dbeafe;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    }
+
+    .plus {
+      font-size: 32px;
+      color: #00063F;
+    }
+
+    .label {
+      font-size: 16px;
+      font-weight: 500;
+      color: #00063F;
+      margin-top: 8px;
+    }
+
+    .fade-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(to top, white 30%, transparent);
+      pointer-events: none;
+    }
+
+    .vs-badge {
+      width: 44px;
+      height: 44px;
+      background-color: #00063F;
+      color: white;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 900px) {
+      .compare-container {
+        flex-direction: column;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+     .comparison-section {
+      max-width: 1000px;
+      margin: 0 auto 30px;
+    }
+
+    .comparison-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .comparison-row {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f3f6fc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .comparison-cell {
+      flex: 1;
+      text-align: center;
+      padding: 14px 12px;
+      font-size: 16px;
+      font-weight: 500;
+      border-left: 1px solid #e5e7eb;
+    }
+
+    .comparison-cell:first-child {
+      border-left: none;
+    }
+
+    @media (max-width: 600px) {
+      .comparison-row {
+        flex-direction: column;
+      }
+
+      .comparison-cell {
+        border-left: none !important;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .comparison-cell:first-child {
+        border-top: none;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+       .site-footer {
+  background: linear-gradient(90deg, #0A1632, #1e3a8a);
+  color: white;
+  font-family: sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-top: 8px solid #00063F;
+  border-bottom: 8px solid #00063F;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: white;
+  color: #001834;
+  font-weight: 500;
+  padding: 0.2px 0;
+}
+
+
+.site-footer {
+  position: relative;
+  text-align: left;
+  justify-content: left;
+  margin-top: 16px;
+}
+
+
+.faq-container h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+    </style>
+</head>
+<body>
+      <!-- Navbar -->
+  <nav>
+    <a href="example.html" class="logo-link">
+    <div class="logo">
+      <img class="gargantyua-logo" src="images/TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
+    </div>
+  </a>
+    
+   
+    
+        <div class="nav-links" id="navLinks">
+          <a href="example.html">Bosh sahifa</a>
+          <a href="o`quv-markazlari.html">O‘quv markazlari</a>
+          <a href="reytinglar.html">Reytinglar</a>
+          <a href="yangiliklar.html">Yangiliklar</a>
+          <a href="proekt-haqida.html">Solishtiruv sahifasi</a>
+        </div>
+
+        <div class="signin">
+          <a href="login.html" class="signin-button">Kirish</a>
+        </div>
+
+  </nav>
+
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+       <h1>Universitetlar Solishtiruv<span class="highlight">sahifasi</span></h1>
+      </div>
+    </div>
+      
+
+
+  </section>
+
+
+
+
+
+
+<section class="vs_vs">
+  <div class="compare-container">
+    <!-- First Card -->
+    <div class="card" onclick="addUniversity(this)">
+      <div class="plus">+</div>
+      <div class="label">Universitetni qo'shish</div>
+      <div class="fade-bottom"></div>
+    </div>
+
+    <!-- VS Circle -->
+    <div class="vs-badge">VS</div>
+
+    <!-- Second Card -->
+    <div class="card" onclick="addUniversity(this)">
+      <div class="plus">+</div>
+      <div class="label">Universitetni qo'shish</div>
+      <div class="fade-bottom"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Foundation Year Row -->
+  <div class="comparison-section">
+    <div class="comparison-title">Tashkil etilgan yil</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">1918</div>
+      <div class="comparison-cell">1936</div>
+    </div>
+  </div>
+
+  <!-- Primary Campus Region Row -->
+  <div class="comparison-section">
+    <div class="comparison-title">Boshlang'ich kampus hududi</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">Toshkent</div>
+      <div class="comparison-cell">Toshkent</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Akademik Sifat (Umuman 25%)</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">22%</div>
+      <div class="comparison-cell">21%</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Xalqaro Munosabatlar (Umuman 15%)</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">14%</div>
+      <div class="comparison-cell">14%</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Bandlik (Umuman 20%)</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">18%</div>
+      <div class="comparison-cell">16%</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Sharhlar (Umuman 15%)</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">12%</div>
+      <div class="comparison-cell">13%</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Infratuzilma (Umuman 10%)</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">8%</div>
+      <div class="comparison-cell">7%</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Narxi</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">7 500 000som</div>
+      <div class="comparison-cell">7 640 000som</div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Qabul qilish ball</div>
+    <div class="comparison-row">
+      <div class="comparison-cell">185</div>
+      <div class="comparison-cell">180</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <img src="images/TalabaWay-logo.png" alt="Logo" class="footer-logo" />
+        <h3>TalabaWay</h3>
+        <p>
+          To‘g‘ri taʼlim yo‘lini tanlashingizda yordam beramiz.
+        </p>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Navigatsiya</h4>
+        <ul>
+          <li><a href="example.html">Bosh sahifa</a></li>
+          <li><a href="reytinglar.html">Reytinglar</a></li>
+          <li><a href="o`quv-markazlari.html">O‘quv markazlari</a></li>
+          <li><a href="yangiliklar.html">Yangiliklar</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <div class="footer-column">
+        <h4>Qoʻshimcha maʼlumotlar</h4>
+        <ul>
+          <li>Email: info@talabaway.com</li>
+          <li>Telefon: +998 (99) 123-12-14</li>
+          <li>Telegram: @talabaway</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Gargantyua. Barcha huquqlar himoyalangan</p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function addUniversity(card) {
+      const name = prompt("Enter university name:");
+      if (name && name.trim()) {
+        card.innerHTML = `<div class="label" style="font-size: 18px; font-weight: 600; color: #1f2937;">${name.trim()}</div>`;
+      }
+    }
+  </script>
+</body>
+</html>
