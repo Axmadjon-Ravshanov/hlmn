@@ -1449,7 +1449,7 @@
   <nav>
     <a href="example.html" class="logo-link">
     <div class="logo">
-      <img class="gargantyua-logo" src="images/TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
+      <img class="gargantyua-logo" src="TalabaWay-logo.png"> <span class="main-word" >TalabaWay</span>
     </div>
   </a>
     
