@@ -1,5 +1,3 @@
-# hlmn
-
 <!DOCTYPE html>
 <html lang="uz">
 <head>
